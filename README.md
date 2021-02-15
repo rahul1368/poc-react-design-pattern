@@ -7,9 +7,24 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 In the project directory, you can run:
 
 ### `npm start`
+```
+#Change to container app
+cd poc-react-design-pattern
+#Start container app
+npm start
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#Change to dashboard micro app
+cd src/dashboard
+#Start dashboard micro app
+npm start
+
+#Change to investment micro app
+cd src/investment
+#Start dashboard micro app
+npm start
+```
+Runs the container app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view container app in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
