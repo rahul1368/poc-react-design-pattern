@@ -6,31 +6,29 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm start`
+## Installation
 ```
-#Change to container app
+# Clone repository into local directory named microfrontend_pattern
+git clone https://github.com/rahul1368/poc-react-design-pattern microfrontend_pattern
 
-cd poc-react-design-pattern
+# Change to container app
+cd microfrontend_pattern
 
-#Start container app
-
+# Start container app
 npm start
 
-#Change to dashboard micro app
-
+# Change to dashboard micro app
 cd src/dashboard
 
-#Start dashboard micro app
-
+# Start dashboard micro app
 npm start
 
-#Change to investment micro app
-
+# Change to investment micro app
 cd src/investment
 
-#Start dashboard micro app
-
+# Start investment micro app
 npm start
+
 ```
 Runs the container app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view container app in the browser.
