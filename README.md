@@ -9,18 +9,27 @@ In the project directory, you can run:
 ### `npm start`
 ```
 #Change to container app
+
 cd poc-react-design-pattern
+
 #Start container app
+
 npm start
 
 #Change to dashboard micro app
+
 cd src/dashboard
+
 #Start dashboard micro app
+
 npm start
 
 #Change to investment micro app
+
 cd src/investment
+
 #Start dashboard micro app
+
 npm start
 ```
 Runs the container app in the development mode.\
