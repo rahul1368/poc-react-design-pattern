@@ -9,7 +9,7 @@ In the project directory, you can run:
 ### `npm start`
 ```
 #Change to container app
-cd poc-react-design-pattern
+`cd poc-react-design-pattern`
 #Start container app
 npm start
 
