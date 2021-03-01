@@ -1,8 +1,26 @@
-.App {
+.App,.header{
   text-align: center;
   margin:auto;
 }
+ul,li{
+  padding:10px;
+}
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
 
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(95, 89, 89);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

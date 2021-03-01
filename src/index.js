@@ -9,7 +9,7 @@ import Footer from './shared/footer';
 ReactDOM.render(
   <React.StrictMode>
     <Header />
-    <App />
+    <App key="containerApp" />
     <Footer />
   </React.StrictMode>,
   document.getElementById('root')

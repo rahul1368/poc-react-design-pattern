@@ -1,7 +1,7 @@
 import React from "react";
 
 const Header = (props)=>(
-    <div>
+    <div className="header">
         This is header component.
     </div>
 ) 

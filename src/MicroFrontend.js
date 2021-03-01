@@ -9,10 +9,9 @@ class MicroFrontend extends React.Component {
       this.renderMicroFrontend();
       return;
     }
-console.error("ss",host)
     fetch(`http://localhost:3000/asset-manifest.json`)
       .then((res) => {return res.json()})
-      .then(manifest => {console.log("manifest=>",manifest)
+      .then(manifest => {
         const promises = Object.keys(manifest['files'])
           .filter(key => key.endsWith('.js'))
           .reduce((sum, key) => {

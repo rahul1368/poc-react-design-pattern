@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 window.renderDashboard = (containerId, history) => {
   ReactDOM.render(
-    <React.StrictMode><App history={history} /></React.StrictMode>,
+    <React.StrictMode><App history={history} key="dashboardApp" /></React.StrictMode>,
     document.getElementById(containerId),
   );
 };

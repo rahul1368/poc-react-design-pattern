@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 window.renderInvestment = (containerId, history) => {
   ReactDOM.render(
-    <React.StrictMode><App history={history} /></React.StrictMode>,
+    <React.StrictMode><App history={history} key="investmentApp" /></React.StrictMode>,
     document.getElementById(containerId),
   );
 };
