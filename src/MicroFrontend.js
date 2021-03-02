@@ -19,7 +19,6 @@ class MicroFrontend extends React.Component {
               new Promise(resolve => {
                 const path = `${host}/${manifest['entrypoints'][key]}`;
                 const script = document.createElement('script');
-                console.error(path)
                 if (manifest['entrypoints'][key] === 'main.js') {
                   script.id = scriptId;
                 }
