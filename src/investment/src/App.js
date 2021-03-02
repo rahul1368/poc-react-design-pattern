@@ -1,10 +1,13 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './App.css';
-import Account from "./containers/Account";
-import BankDetails from "./containers/BankDetails";
 import Home from './containers/Home';
+/**
+ * Below modules are lazy loadable
+ */
+import Account from "./containers/Account/Loadable";
+import BankDetails from "./containers/BankDetails/Loadable";
 import Pan from './containers/Pan/Loadable';
-import Payment from "./containers/Payment";
+import Payment from "./containers/Payment/Loadable";
 
 function App(props) {
   return (

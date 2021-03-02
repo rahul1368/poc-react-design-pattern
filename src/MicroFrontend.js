@@ -12,14 +12,15 @@ class MicroFrontend extends React.Component {
     fetch(`${host}/asset-manifest.json`)
       .then((res) => {return res.json()})
       .then(manifest => {
-        const promises = Object.keys(manifest['files'])
-          .filter(key => key.endsWith('.js'))
+        const promises = Object.keys(manifest['entrypoints'])
+          .filter(key => manifest['entrypoints'][key].endsWith('.js'))
           .reduce((sum, key) => {
             sum.push(
               new Promise(resolve => {
-                const path = `${host}${manifest['files'][key]}`;
+                const path = `${host}/${manifest['entrypoints'][key]}`;
                 const script = document.createElement('script');
-                if (key === 'main.js') {
+                console.error(path)
+                if (manifest['entrypoints'][key] === 'main.js') {
                   script.id = scriptId;
                 }
                 script.onload = () => {
