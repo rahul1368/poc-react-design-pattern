@@ -12,5 +12,14 @@ export const Home = (props)=>(
             <Link to="/dashboard">Dashboard</Link>
           </li>
         </ul>
+        {/* Todos */}
+      <ul>
+        {
+          props.todoListdata && props.todoListdata.length > 0 &&
+          props.todoListdata.map((todo,index)=>{
+            return <li key={index}>{todo.value}</li>
+          }) 
+        }
+      </ul>
     </div>
 ) 
