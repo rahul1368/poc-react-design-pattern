@@ -2,8 +2,6 @@ import "./ContainerApp.css";
 import React,{ Suspense } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import {Home} from './containers/home';
-//const Investment =  React.lazy(()=>import("./containers/investment"));
-//const Dashboard =  React.lazy(()=>import("./containers/dashboard"));
 import MicroFrontend from './MicroFrontend';
 
 const {
@@ -11,7 +9,6 @@ const {
   REACT_APP_DASHBOARD_HOST: dashboardHost,
 } = process.env;
 
-console.error("env vars=>",process.env)
 
 const Investment = ({ history }) => (
   <MicroFrontend history={history} host={investmentHost} name="Investment" />
@@ -25,20 +22,8 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={Home}/>
-          <Route exact path="/investment" component={Investment} />
-          <Route exact path="/dashboard" component={Dashboard} />
-            
-          
-          {/* <Route path="/investment">
-            <Suspense fallback={<div>Loading...</div>}>
-              <Investment />
-            </Suspense>
-          </Route>
-          <Route path="/dashboard">
-            <Suspense fallback={<div>Loading...</div>}>
-              <Dashboard />
-            </Suspense>
-          </Route> */}
+          <Route exact path={["/investment","/investment/*"]} component={Investment} />
+          <Route exact path={["/dashboard","/dashboard/*"]} component={Dashboard} />
         </Switch>
       </Router>
     </div>
